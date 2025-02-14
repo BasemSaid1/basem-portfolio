@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
                   <div>
                     <Link
-                      to="https://fresh-cart-app-mauve.vercel.app/"
+                      to="https://fresh-cart-ewou0tuim-basem-saids-projects.vercel.app"
                       target="_blank"
                     >
                       <img
@@ -156,7 +156,7 @@ export default function Home() {
                   <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
                     <Link
                       target="_blank"
-                      to="https://fresh-cart-app-mauve.vercel.app/"
+                      to="https://fresh-cart-ewou0tuim-basem-saids-projects.vercel.app"
                     >
                       <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
                         DEMO
@@ -164,7 +164,7 @@ export default function Home() {
                     </Link>
                     <Link
                       target="_blank"
-                      to="https://github.com/BasemSaid1/FreshCart-App"
+                      to="https://github.com/BasemSaid1/FreshCart-App/tree/main"
                     >
                       <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
                         CODE
