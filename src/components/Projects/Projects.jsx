@@ -13,6 +13,7 @@ import project10 from "../../assets/project10.png";
 import project11 from "../../assets/project11.png";
 import project12 from "../../assets/project12.png";
 import project13 from "../../assets/project13.png";
+import project14 from "../../assets/project14.png";
 
 import { Link } from "react-router-dom";
 
@@ -54,6 +55,43 @@ export default function Projects() {
                   <Link
                     target="_blank"
                     to="https://github.com/BasemSaid1/FreshCart-App/tree/main"
+                  >
+                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      CODE
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/3 text-center">
+              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+                <div>
+                  <Link
+                    to="https://news-app-nine-pi.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-[100%] h-full "
+                      src={project14}
+                      alt="photo-project14"
+                    />
+                  </Link>
+                  <h2 className="mt-3 text-white text-3xl font-bold">
+                    GlobalNews
+                  </h2>
+                </div>
+                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                  <Link
+                    target="_blank"
+                    to="https://news-app-nine-pi.vercel.app/"
+                  >
+                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      DEMO
+                    </button>
+                  </Link>
+                  <Link
+                    target="_blank"
+                    to="https://github.com/BasemSaid1/News-App"
                   >
                     <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
                       CODE

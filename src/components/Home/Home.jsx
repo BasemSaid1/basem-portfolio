@@ -17,7 +17,7 @@ import imgui from "../../assets/material-ui-svgrepo-com.svg";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
-import project11 from "../../assets/project11.png";
+import project14 from "../../assets/project14.png";
 import project12 from "../../assets/project12.png";
 import project13 from "../../assets/project13.png";
 
@@ -177,23 +177,23 @@ export default function Home() {
                 <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
                   <div>
                     <Link
-                      to="https://la-collection-e-commerce-ruby.vercel.app/"
+                      to="https://news-app-nine-pi.vercel.app/"
                       target="_blank"
                     >
                       <img
                         className="w-[100%] h-full "
-                        src={project11}
-                        alt="photo-project5"
+                        src={project14}
+                        alt="photo-project14"
                       />
                     </Link>
                     <h2 className="mt-3 text-white text-3xl font-bold">
-                      La-collection
+                      GlobalNews
                     </h2>
                   </div>
                   <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
                     <Link
                       target="_blank"
-                      to="https://la-collection-e-commerce-ruby.vercel.app/"
+                      to="https://news-app-nine-pi.vercel.app/"
                     >
                       <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
                         DEMO
@@ -201,7 +201,7 @@ export default function Home() {
                     </Link>
                     <Link
                       target="_blank"
-                      to="https://github.com/BasemSaid1/La-collection-E-commerce"
+                      to="https://github.com/BasemSaid1/News-App"
                     >
                       <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
                         CODE
