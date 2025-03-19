@@ -16,7 +16,6 @@ export default function Navbar() {
     <>
       <nav className="bg-black z-50 fixed top-0 left-0 right-0">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          {/* Logo */}
           <Link className="text-white flex flex-col items-center" to="/">
             <div className="flex flex-col items-center">
               <div>
@@ -29,7 +28,6 @@ export default function Navbar() {
               </div>
             </div>
           </Link>
-          {/* Toggle button */}
           <button
             onClick={toggleMenu}
             className="text-white md:hidden focus:outline-none"
@@ -38,7 +36,6 @@ export default function Navbar() {
               className={`fa-solid ${isMenuOpen ? "fa-times" : "fa-bars"}`}
             ></i>
           </button>
-          {/* Menu */}
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"

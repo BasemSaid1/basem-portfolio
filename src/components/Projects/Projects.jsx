@@ -13,8 +13,7 @@ import project10 from "../../assets/project10.png";
 import project11 from "../../assets/project11.png";
 import project12 from "../../assets/project12.png";
 import project13 from "../../assets/project13.png";
-import project14 from "../../assets/project14.png";
-
+import project14 from "../../assets/project14.jpg";
 import { Link } from "react-router-dom";
 
 export default function Projects() {

@@ -17,7 +17,7 @@ import imgui from "../../assets/material-ui-svgrepo-com.svg";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
-import project14 from "../../assets/project14.png";
+import project14 from "../../assets/project14.jpg";
 import project12 from "../../assets/project12.png";
 import project13 from "../../assets/project13.png";
 
@@ -32,59 +32,55 @@ export default function Home() {
     const typing = setInterval(() => {
       setcontent((prevText) => prevText + fullText.charAt(prevText.length));
       if (content === fullText) clearInterval(typing);
-    }, 100); // يمكنك تعديل المدة بين كل حرف
+    }, 100);
 
     return () => clearInterval(typing);
   }, []);
 
-  const [text, setText] = useState(""); // النص الذي يتم كتابته
-  const [index, setIndex] = useState(0); // فهرس النص الحالي
-  const [isDeleting, setIsDeleting] = useState(false); // هل يتم مسح النص؟
-  const [isTyping, setIsTyping] = useState(true); // هل يتم الكتابة؟
+  const [text, setText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [isTyping, setIsTyping] = useState(true);
 
-  const texts = ["Frontend Developer", "React.Js Developer"]; // النصوص التي سيتم الكتابة والتبديل بينها
-  const typingSpeed = 100; // سرعة الكتابة (بالملي ثانية) - أسرع من قبل
-  const deletingSpeed = 50; // سرعة المسح (بالملي ثانية) - أسرع من قبل
-  const pauseSpeed = 1000; // مدة التوقف بين الكتابة والمسح (بالملي ثانية) - أقل من قبل
+  const texts = ["Frontend Developer", "React.Js Developer"];
+  const typingSpeed = 100;
+  const deletingSpeed = 50;
+  const pauseSpeed = 1000;
 
   useEffect(() => {
-    const currentText = texts[index]; // النص الحالي
+    const currentText = texts[index];
     let interval;
 
-    // إذا كانت الكتابة قيد التنفيذ
     if (isTyping && text.length < currentText.length) {
       interval = setInterval(() => {
-        setText((prev) => prev + currentText.charAt(text.length)); // كتابة حرف جديد
+        setText((prev) => prev + currentText.charAt(text.length));
       }, typingSpeed);
     }
 
-    // إذا كان النص مكتملًا، ننتظر ثم نبدأ في المسح
     if (text.length === currentText.length && isTyping) {
       clearInterval(interval);
       setTimeout(() => {
         setIsTyping(false);
-        setIsDeleting(true); // بدء المسح
+        setIsDeleting(true);
       }, pauseSpeed);
     }
 
-    // إذا كان النص يتم مسحه
     if (isDeleting && text.length > 0) {
       interval = setInterval(() => {
-        setText((prev) => prev.slice(0, -1)); // مسح حرف واحد
+        setText((prev) => prev.slice(0, -1));
       }, deletingSpeed);
     }
 
-    // بعد مسح النص بالكامل، ننتقل إلى النص التالي
     if (text.length === 0 && isDeleting) {
       clearInterval(interval);
       setTimeout(() => {
-        setIsDeleting(false); // التبديل إلى الكتابة
-        setIndex((prevIndex) => (prevIndex + 1) % texts.length); // التبديل إلى النص التالي
-        setIsTyping(true); // بدء الكتابة للنص التالي
+        setIsDeleting(false);
+        setIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        setIsTyping(true);
       }, pauseSpeed);
     }
 
-    return () => clearInterval(interval); // تنظيف الـ interval عند الانتهاء
+    return () => clearInterval(interval);
   }, [text, isTyping, isDeleting, index]);
 
   return (
