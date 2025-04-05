@@ -14,6 +14,8 @@ import project11 from "../../assets/project11.png";
 import project12 from "../../assets/project12.png";
 import project13 from "../../assets/project13.png";
 import project14 from "../../assets/project14.jpg";
+import project15 from "../../assets/project15.png";
+import project16 from "../../assets/project16.png";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -113,7 +115,7 @@ export default function Projects() {
                     />
                   </Link>
                   <h2 className="mt-3 text-white text-3xl font-bold">
-                    La-collection E-commerce
+                    La-collection
                   </h2>
                 </div>
                 <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
@@ -533,6 +535,80 @@ export default function Projects() {
                   <Link
                     target="_blank"
                     to="https://github.com/BasemSaid1/first-framework"
+                  >
+                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      CODE
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/3 text-center">
+              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+                <div>
+                  <Link
+                    to="https://dashboard-two-woad-66.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-[100%] h-full"
+                      src={project15}
+                      alt="photo-project15"
+                    />
+                  </Link>
+                  <h2 className="mt-3 text-white text-3xl font-bold">
+                    Dashboard
+                  </h2>
+                </div>
+                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                  <Link
+                    target="_blank"
+                    to="https://dashboard-two-woad-66.vercel.app/"
+                  >
+                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      DEMO
+                    </button>
+                  </Link>
+                  <Link
+                    target="_blank"
+                    to="https://github.com/BasemSaid1/dashboard"
+                  >
+                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      CODE
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/3 text-center">
+              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+                <div>
+                  <Link
+                    to="https://quiz-app-eta-ten-63.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-[100%] h-full"
+                      src={project16}
+                      alt="photo-project16"
+                    />
+                  </Link>
+                  <h2 className="mt-3 text-white text-3xl font-bold">
+                    Quiz App
+                  </h2>
+                </div>
+                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                  <Link
+                    target="_blank"
+                    to="https://quiz-app-eta-ten-63.vercel.app/"
+                  >
+                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      DEMO
+                    </button>
+                  </Link>
+                  <Link
+                    target="_blank"
+                    to="https://github.com/BasemSaid1/Quiz-App"
                   >
                     <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
                       CODE
