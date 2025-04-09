@@ -15,11 +15,11 @@ import imgsass from "../../assets/sass-svgrepo-com.svg";
 import imgnext from "../../assets/next-dot-js-svgrepo-com.svg";
 import imgui from "../../assets/material-ui-svgrepo-com.svg";
 import project1 from "../../assets/project1.png";
-import project2 from "../../assets/project2.png";
-import project3 from "../../assets/project3.png";
 import project14 from "../../assets/project14.jpg";
 import project12 from "../../assets/project12.png";
 import project13 from "../../assets/project13.png";
+import project18 from "../../assets/project18.png";
+import project15 from "../../assets/project15.png";
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -133,36 +133,38 @@ export default function Home() {
             </h1>
             <div className="flex flex-wrap  mb-10 md:w-[80%] w-[95%] mx-auto">
               <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                   <div>
                     <Link
                       to="https://fresh-cart-ewou0tuim-basem-saids-projects.vercel.app"
                       target="_blank"
                     >
                       <img
-                        className="w-[100%] h-full "
+                        className="w-full h-[250px] object-cover"
                         src={project13}
-                        alt="photo-project13"
+                        alt="FreshCart"
                       />
                     </Link>
-                    <h2 className="mt-3 text-white text-3xl font-bold">
-                      FreshCart App
-                    </h2>
                   </div>
-                  <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                    FreshCart App
+                  </h2>
+                  <div className="mt-4 flex space-x-4">
                     <Link
-                      target="_blank"
                       to="https://fresh-cart-ewou0tuim-basem-saids-projects.vercel.app"
+                      target="_blank"
+                      className="w-1/2"
                     >
-                      <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                         DEMO
                       </button>
                     </Link>
                     <Link
-                      target="_blank"
                       to="https://github.com/BasemSaid1/FreshCart-App/tree/main"
+                      target="_blank"
+                      className="w-1/2"
                     >
-                      <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                         CODE
                       </button>
                     </Link>
@@ -170,36 +172,38 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                   <div>
                     <Link
                       to="https://news-app-nine-pi.vercel.app/"
                       target="_blank"
                     >
                       <img
-                        className="w-[100%] h-full "
+                        className="w-full h-[250px] object-cover"
                         src={project14}
-                        alt="photo-project14"
+                        alt="GlobalNews"
                       />
                     </Link>
-                    <h2 className="mt-3 text-white text-3xl font-bold">
-                      GlobalNews
-                    </h2>
                   </div>
-                  <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                    GlobalNews
+                  </h2>
+                  <div className="mt-4 flex space-x-4">
                     <Link
-                      target="_blank"
                       to="https://news-app-nine-pi.vercel.app/"
+                      target="_blank"
+                      className="w-1/2"
                     >
-                      <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                         DEMO
                       </button>
                     </Link>
                     <Link
-                      target="_blank"
                       to="https://github.com/BasemSaid1/News-App"
+                      target="_blank"
+                      className="w-1/2"
                     >
-                      <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                         CODE
                       </button>
                     </Link>
@@ -207,36 +211,116 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+                  <div>
+                    <Link
+                      to="https://my-movies-nu-teal.vercel.app/"
+                      target="_blank"
+                    >
+                      <img
+                        className="w-full h-[250px] object-cover"
+                        src={project18}
+                        alt="My Movies"
+                      />
+                    </Link>
+                  </div>
+                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                    My Movies
+                  </h2>
+                  <div className="mt-4 flex space-x-4">
+                    <Link
+                      to="https://my-movies-nu-teal.vercel.app/"
+                      target="_blank"
+                      className="w-1/2"
+                    >
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
+                        DEMO
+                      </button>
+                    </Link>
+                    <Link
+                      to="https://github.com/BasemSaid1/My_Movies"
+                      target="_blank"
+                      className="w-1/2"
+                    >
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
+                        CODE
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-1/3 text-center">
+                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+                  <div>
+                    <Link
+                      to="https://dashboard-two-woad-66.vercel.app/"
+                      target="_blank"
+                    >
+                      <img
+                        className="w-full h-[250px] object-cover"
+                        src={project15}
+                        alt="Dashboard"
+                      />
+                    </Link>
+                  </div>
+                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                    Dashboard
+                  </h2>
+                  <div className="mt-4 flex space-x-4">
+                    <Link
+                      to="https://dashboard-two-woad-66.vercel.app/"
+                      target="_blank"
+                      className="w-1/2"
+                    >
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
+                        DEMO
+                      </button>
+                    </Link>
+                    <Link
+                      to="https://github.com/BasemSaid1/dashboard"
+                      target="_blank"
+                      className="w-1/2"
+                    >
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
+                        CODE
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-1/3 text-center">
+                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                   <div>
                     <Link
                       to="https://recipe-food-amber.vercel.app/"
                       target="_blank"
                     >
                       <img
-                        className="w-[100%] h-full"
+                        className="w-full h-[250px] object-cover"
                         src={project12}
-                        alt="photo-project5"
+                        alt="Recipe App"
                       />
                     </Link>
-                    <h2 className="mt-3 text-white text-3xl font-bold">
-                      Recipe
-                    </h2>
                   </div>
-                  <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                    Recipe
+                  </h2>
+                  <div className="mt-4 flex space-x-4">
                     <Link
-                      target="_blank"
                       to="https://recipe-food-amber.vercel.app/"
+                      target="_blank"
+                      className="w-1/2"
                     >
-                      <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                         DEMO
                       </button>
                     </Link>
                     <Link
-                      target="_blank"
                       to="https://github.com/BasemSaid1/Recipe-food"
+                      target="_blank"
+                      className="w-1/2"
                     >
-                      <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                         CODE
                       </button>
                     </Link>
@@ -244,110 +328,38 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                   <div>
                     <Link
                       to="https://basemsaid1.github.io/weather-app/"
                       target="_blank"
                     >
                       <img
-                        className="w-[100%] h-full"
+                        className="w-full h-[250px] object-cover"
                         src={project1}
-                        alt="photo-project1"
+                        alt="Weather App"
                       />
                     </Link>
-                    <h2 className="mt-3 text-white text-3xl font-bold">
-                      weather-app
-                    </h2>
                   </div>
-                  <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                    weather-app
+                  </h2>
+                  <div className="mt-4 flex space-x-4">
                     <Link
-                      target="_blank"
                       to="https://basemsaid1.github.io/weather-app/"
+                      target="_blank"
+                      className="w-1/2"
                     >
-                      <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                         DEMO
                       </button>
                     </Link>
                     <Link
-                      target="_blank"
                       to="https://github.com/BasemSaid1/weather-app"
-                    >
-                      <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
-                        CODE
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
-                  <div>
-                    <Link
-                      to="https://basemsaid1.github.io/Login-JS-LocalStorage/"
                       target="_blank"
+                      className="w-1/2"
                     >
-                      <img
-                        className="w-[100%] h-full"
-                        src={project2}
-                        alt="photo-project2"
-                      />
-                    </Link>
-                    <h2 className="mt-3 text-white text-3xl font-bold">
-                      Login-app
-                    </h2>
-                  </div>
-                  <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
-                    <Link
-                      target="_blank"
-                      to="https://basemsaid1.github.io/Login-JS-LocalStorage/"
-                    >
-                      <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
-                        DEMO
-                      </button>
-                    </Link>
-                    <Link
-                      target="_blank"
-                      to="https://github.com/BasemSaid1/Login-JS-LocalStorage"
-                    >
-                      <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
-                        CODE
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
-                  <div>
-                    <Link
-                      to="https://basemsaid1.github.io/Todo-list/"
-                      target="_blank"
-                    >
-                      <img
-                        className="w-[100%] h-full"
-                        src={project3}
-                        alt="photo-project3"
-                      />
-                    </Link>
-                    <h2 className="mt-3 text-white text-3xl font-bold">
-                      Todo-list
-                    </h2>
-                  </div>
-                  <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
-                    <Link
-                      target="_blank"
-                      to="https://basemsaid1.github.io/Todo-list/"
-                    >
-                      <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
-                        DEMO
-                      </button>
-                    </Link>
-                    <Link
-                      target="_blank"
-                      to="https://github.com/BasemSaid1/Todo-list"
-                    >
-                      <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                         CODE
                       </button>
                     </Link>

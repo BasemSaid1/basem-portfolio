@@ -17,6 +17,7 @@ import project14 from "../../assets/project14.jpg";
 import project15 from "../../assets/project15.png";
 import project16 from "../../assets/project16.png";
 import project17 from "../../assets/project17.png";
+import project18 from "../../assets/project18.png";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -27,38 +28,40 @@ export default function Projects() {
           <h1 className="text-white text-center text-4xl md:text-5xl mb-16">
             Check Out My Projects
           </h1>
-          <div className="flex flex-wrap  mb-10 md:w-[80%] w-[95%] mx-auto">
+          <div className="flex flex-wrap mb-10 md:w-[80%] w-[95%] mx-auto">
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://fresh-cart-ewou0tuim-basem-saids-projects.vercel.app"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full "
+                      className="w-full h-[250px] object-cover"
                       src={project13}
-                      alt="photo-project13"
+                      alt="FreshCart"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    FreshCart App
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  FreshCart App
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://fresh-cart-ewou0tuim-basem-saids-projects.vercel.app"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/FreshCart-App/tree/main"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -66,36 +69,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://news-app-nine-pi.vercel.app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full "
+                      className="w-full h-[250px] object-cover"
                       src={project14}
-                      alt="photo-project14"
+                      alt="GlobalNews"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    GlobalNews
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  GlobalNews
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://news-app-nine-pi.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/News-App"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -103,36 +108,77 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+                <div>
+                  <Link
+                    to="https://my-movies-nu-teal.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[250px] object-cover"
+                      src={project18}
+                      alt="My Movies"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  My Movies
+                </h2>
+                <div className="mt-4 flex space-x-4">
+                  <Link
+                    to="https://my-movies-nu-teal.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
+                      DEMO
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/My_Movies"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
+                      CODE
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/3 text-center">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://la-collection-e-commerce-ruby.vercel.app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project11}
-                      alt="photo-project5"
+                      alt="La-collection"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    La-collection
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  La-collection
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://la-collection-e-commerce-ruby.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/La-collection-E-commerce"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -140,34 +186,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://recipe-food-amber.vercel.app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project12}
-                      alt="photo-project5"
+                      alt="Recipe App"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">Recipe</h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Recipe
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://recipe-food-amber.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/Recipe-food"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -175,36 +225,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/weather-app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project1}
-                      alt="photo-project1"
+                      alt="Weather App"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    weather-app
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  weather-app
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/weather-app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/weather-app"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -212,36 +264,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/Login-JS-LocalStorage/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project2}
-                      alt="photo-project2"
+                      alt="Login App"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Login-app
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Login-app
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/Login-JS-LocalStorage/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/Login-JS-LocalStorage"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -249,36 +303,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/Todo-list/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project3}
-                      alt="photo-project3"
+                      alt="Todo List"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Todo-list
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Todo-list
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/Todo-list/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/Todo-list"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -286,36 +342,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/Calculator-app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project4}
-                      alt="photo-project4"
+                      alt="Calculator-app"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Calculator-app
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Calculator-app
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/Calculator-app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/Calculator-app"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -323,36 +381,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/quran-app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project10}
-                      alt="photo-project5"
+                      alt="Quran App"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Quran App
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Quran App
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/quran-app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/quran-app"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -360,36 +420,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/Daniels-Template/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project5}
-                      alt="photo-project5"
+                      alt="Daniels-Template"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Daniels-Template
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Daniels-Template
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/Daniels-Template/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/Daniels-Template.git"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -397,36 +459,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/BookMark/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project6}
-                      alt="photo-project6"
+                      alt="BookMark"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    BookMark
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  BookMark
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/BookMark/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/BookMark"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -434,36 +498,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/Random-Quote-Generator/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project7}
-                      alt="photo-project7"
+                      alt="Random-Quote-Generator"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Random-Quote-Generator
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Random-Quote-Generator
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/Random-Quote-Generator/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/Random-Quote-Generator"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -471,36 +537,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://basemsaid1.github.io/slider-js/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project8}
-                      alt="photo-project8"
+                      alt="slider-js"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    slider-js
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  slider-js
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://basemsaid1.github.io/slider-js/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/slider-js"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -508,36 +576,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://first-framework-mu.vercel.app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project9}
-                      alt="photo-project9"
+                      alt="First-framework"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    First-framework
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  First-framework
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://first-framework-mu.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/first-framework"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -545,36 +615,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://dashboard-two-woad-66.vercel.app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project15}
-                      alt="photo-project15"
+                      alt="Dashboard"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Dashboard
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Dashboard
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://dashboard-two-woad-66.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/dashboard"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -582,36 +654,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://quiz-app-eta-ten-63.vercel.app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project16}
-                      alt="photo-project16"
+                      alt="Quiz App"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Quiz App
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Quiz App
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://quiz-app-eta-ten-63.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/Quiz-App"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
@@ -619,36 +693,38 @@ export default function Projects() {
               </div>
             </div>
             <div className="w-full md:w-1/3 text-center">
-              <div className="relative mr-3 mb-5 transition-all duration-[0.3s] hover:scale-105 group">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
                     to="https://rock-paper-scissors-tan-six.vercel.app/"
                     target="_blank"
                   >
                     <img
-                      className="w-[100%] h-full"
+                      className="w-full h-[250px] object-cover"
                       src={project17}
-                      alt="photo-project17"
+                      alt="Rock Paper Scissors"
                     />
                   </Link>
-                  <h2 className="mt-3 text-white text-3xl font-bold">
-                    Rock Paper Scissors
-                  </h2>
                 </div>
-                <div className=" absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 group-hover:opacity-100 transition-all duration-[0.3s]">
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Rock Paper Scissors
+                </h2>
+                <div className="mt-4 flex space-x-4">
                   <Link
-                    target="_blank"
                     to="https://rock-paper-scissors-tan-six.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white mr-2 font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       DEMO
                     </button>
                   </Link>
                   <Link
-                    target="_blank"
                     to="https://github.com/BasemSaid1/Rock-Paper-Scissors"
+                    target="_blank"
+                    className="w-1/2"
                   >
-                    <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
                       CODE
                     </button>
                   </Link>
