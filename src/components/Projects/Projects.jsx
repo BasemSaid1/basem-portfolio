@@ -18,6 +18,7 @@ import project15 from "../../assets/project15.png";
 import project16 from "../../assets/project16.png";
 import project17 from "../../assets/project17.png";
 import project18 from "../../assets/project18.png";
+import project19 from "../../assets/project19.png";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -58,6 +59,45 @@ export default function Projects() {
                   </Link>
                   <Link
                     to="https://github.com/BasemSaid1/FreshCart-App/tree/main"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
+                      CODE
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/3 text-center">
+              <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+                <div>
+                  <Link
+                    to="https://restaurant-ashen-five.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[250px] object-cover"
+                      src={project19}
+                      alt="restaurant"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-3 text-white text-2xl font-semibold">
+                  Restaurant
+                </h2>
+                <div className="mt-4 flex space-x-4">
+                  <Link
+                    to="https://restaurant-ashen-five.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
+                      DEMO
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/restaurant"
                     target="_blank"
                     className="w-1/2"
                   >
