@@ -9,7 +9,7 @@ import project6 from "../../assets/project6.png";
 import project7 from "../../assets/project7.png";
 import project8 from "../../assets/project8.png";
 import project9 from "../../assets/project9.png";
-import project10 from "../../assets/project10.png";
+import project20 from "../../assets/project20.png";
 import project11 from "../../assets/project11.png";
 import project12 from "../../assets/project12.png";
 import project13 from "../../assets/project13.png";
@@ -424,12 +424,12 @@ export default function Projects() {
               <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
                 <div>
                   <Link
-                    to="https://basemsaid1.github.io/quran-app/"
+                    to="https://quran-app2-peach.vercel.app/"
                     target="_blank"
                   >
                     <img
                       className="w-full h-[250px] object-cover"
-                      src={project10}
+                      src={project20}
                       alt="Quran App"
                     />
                   </Link>
@@ -439,7 +439,7 @@ export default function Projects() {
                 </h2>
                 <div className="mt-4 flex space-x-4">
                   <Link
-                    to="https://basemsaid1.github.io/quran-app/"
+                    to="https://quran-app2-peach.vercel.app/"
                     target="_blank"
                     className="w-1/2"
                   >
@@ -448,7 +448,7 @@ export default function Projects() {
                     </button>
                   </Link>
                   <Link
-                    to="https://github.com/BasemSaid1/quran-app"
+                    to="https://github.com/BasemSaid1/Quran-App2"
                     target="_blank"
                     className="w-1/2"
                   >

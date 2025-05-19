@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-  border-bottom: 3px solid white;
-}
-
 /* للتصفحات الحديثة */
 ::-webkit-scrollbar {
   width: 10px;
