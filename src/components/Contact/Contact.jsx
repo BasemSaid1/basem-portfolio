@@ -6,89 +6,107 @@ export default function Contact() {
     <>
       <section className="bg-black">
         <div className="pt-32 pb-20 ">
-          <h1 className="text-white text-center md:text-7xl text-5xl font-bold">
+          <h1 className="text-white text-center text-4xl md:text-5xl font-extrabold font-['Poppins'] tracking-tight animate-[pulse_2s_ease-in-out_infinite]">
             Get In Touch
           </h1>
-          <div className="flex flex-wrap text-center text-white mt-11">
-            <div className="w-full lg:w-1/3 mb-5">
-              <div>
-                <i className="fa-solid fa-location-dot fs-2"></i>
-                <p className="fw-bold mt-3">Address</p>
-                <h6>Egypt-Al-Sharqia-Zagazig</h6>
+
+          <div className="flex flex-wrap justify-center text-center text-white mt-11 gap-8">
+            <div
+              className="w-[95%] md:w-1/2 lg:w-1/4 group"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="bg-gray-800 border-2 border-gray-600 rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)]">
+                <i className="fa-solid fa-location-dot text-4xl text-emerald-500"></i>
+                <p className="font-bold mt-3 text-xl">Address</p>
+                <h6 className="text-gray-300">Egypt-Al-Sharqia-Zagazig</h6>
               </div>
             </div>
-            <div className="w-full lg:w-1/3 mb-5">
-              <div>
-                <i className="fa-solid fa-phone fs-2"></i>
-                <p className="fw-bold mt-3">Phone</p>
-                <h6>+201095435168</h6>
+            <div
+              className="w-[95%] md:w-1/2 lg:w-1/4 group"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div className="bg-gray-800 border-2 border-gray-600 rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)]">
+                <i className="fa-solid fa-phone text-4xl text-emerald-500"></i>
+                <p className="font-bold mt-3 text-xl">Phone</p>
+                <h6 className="text-gray-300">+201095435168</h6>
               </div>
             </div>
-            <div className="w-full lg:w-1/3 mb-5">
-              <div>
-                <i className="fa-regular fa-envelope fs-2"></i>
-                <p className="fw-bold mt-3">Email</p>
-                <h6>Bbasemsaid@gmail.com</h6>
+            <div
+              className="w-[95%] md:w-1/2 lg:w-1/4 group"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div className="bg-gray-800 border-2 border-gray-600 rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)]">
+                <i className="fa-regular fa-envelope text-4xl text-emerald-500"></i>
+                <p className="font-bold mt-3 text-xl">Email</p>
+                <h6 className="text-gray-300">Bbasemsaid@gmail.com</h6>
               </div>
             </div>
           </div>
-          <div className="mt-7 pt-10">
-            <h1 className="text-white text-center text-5xl font-bold">
+
+          <div className="mt-16 pt-10 pb-16 rounded-2xl shadow-lg">
+            <h1 className="text-white text-center text-4xl md:text-5xl font-extrabold font-['Poppins'] tracking-tight animate-[pulse_2s_ease-in-out_infinite] mb-6">
               Send Message
             </h1>
-            <form className="max-w-md mx-auto mt-6">
-              <div className="relative z-0 w-[90%] mx-auto md:w-full mb-5 group">
+            <form className="max-w-xl mx-auto px-6">
+              <div className="relative mb-6 group">
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
+                  className="peer w-full bg-transparent border-b-2 border-gray-500 text-white placeholder-transparent focus:outline-none focus:border-emerald-500 px-2 py-3 transition-all"
+                  placeholder="Enter Your Name"
                   required
                 />
                 <label
                   htmlFor="name"
-                  className="peer-focus:font-medium absolute text-sm text-white  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="absolute left-2 top-3 text-sm text-gray-400 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-emerald-400"
                 >
                   Enter Your Name
                 </label>
               </div>
-              <div className="relative z-0 w-[90%] mx-auto md:w-full mb-5 group">
+
+              <div className="relative mb-6 group">
                 <input
                   type="number"
                   name="age"
                   id="age"
-                  className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
+                  className="peer w-full bg-transparent border-b-2 border-gray-500 text-white placeholder-transparent focus:outline-none focus:border-emerald-500 px-2 py-3 transition-all"
+                  placeholder="Enter Your Age"
                   required
                 />
                 <label
                   htmlFor="age"
-                  className="peer-focus:font-medium absolute text-sm text-white  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="absolute left-2 top-3 text-sm text-gray-400 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-emerald-400"
                 >
                   Enter Your Age
                 </label>
               </div>
-              <div className="relative z-0 w-[90%] mx-auto md:w-full mb-5 group">
+
+              <div className="relative mb-6 group">
                 <textarea
                   name="message"
                   id="message"
                   rows="4"
-                  className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
+                  className="peer w-full bg-transparent border-b-2 border-gray-500 text-white placeholder-transparent focus:outline-none focus:border-emerald-500 px-2 py-3 transition-all resize-none"
+                  placeholder="Leave a comment..."
                 ></textarea>
                 <label
                   htmlFor="message"
-                  className="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="absolute left-2 top-3 text-sm text-gray-400 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-emerald-400"
                 >
                   Leave a comment...
                 </label>
               </div>
-              <div className="text-center">
-                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-blue-300">
-                  <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-transparent rounded-md group-hover:bg-opacity-0 ">
-                    Send
-                  </span>
+
+              <div className="text-center mt-8">
+                <button
+                  type="submit"
+                  className="px-8 py-3 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-emerald-600 transition-all duration-300"
+                >
+                  Send
                 </button>
               </div>
             </form>

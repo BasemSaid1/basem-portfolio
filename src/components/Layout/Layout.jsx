@@ -7,8 +7,14 @@ export default function Layout() {
   return (
     <>
       <Navbar />
-      <Outlet />
-      <Footer />
+      <div className="flex flex-col justify-between h-screen">
+        <div className="mt-5 pt-16 lg:pt-12 w-full mx-auto">
+          <Outlet />
+        </div>
+        <div>
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }

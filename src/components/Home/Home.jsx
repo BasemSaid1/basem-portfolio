@@ -14,12 +14,12 @@ import imgtypescript from "../../assets/typescript-icon-svgrepo-com.svg";
 import imgsass from "../../assets/sass-svgrepo-com.svg";
 import imgnext from "../../assets/next-dot-js-svgrepo-com.svg";
 import imgui from "../../assets/material-ui-svgrepo-com.svg";
-import project1 from "../../assets/project1.png";
-import project14 from "../../assets/project14.jpg";
+import project15 from "../../assets/project15.png";
 import project12 from "../../assets/project12.png";
 import project13 from "../../assets/project13.png";
+import project20 from "../../assets/project20.png";
 import project18 from "../../assets/project18.png";
-import project15 from "../../assets/project15.png";
+import project19 from "../../assets/project19.png";
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -85,7 +85,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="bg-black">
+      <section className="bg-gradient-to-b from-black via-gray-900 to-black min-h-screen">
         <section
           className="h-screen bg-cover bg-center bg-[#000000b3] bg-blend-overlay flex items-center justify-center"
           style={{ backgroundImage: `url(${header})` }}
@@ -98,7 +98,12 @@ export default function Home() {
               {text}
             </h2>
             <div className="pt-5">
-              <Link className="pr-2" to="">
+              <Link
+                className="pr-2"
+                to="https://drive.google.com/file/d/1SmF1kdiP5U5G2j6Nuc20Ohq-8VoaahkC/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="bg-emerald-800 hover:bg-emerald-700 text-white rounded-lg py-3 px-4">
                   My Resume
                 </button>
@@ -109,18 +114,29 @@ export default function Home() {
                 </button>
               </Link>
             </div>
-            <div className=" pt-5 text-white text-3xl">
+            <div className="pt-5 text-white text-3xl flex justify-center gap-6">
               <Link
                 to="https://www.linkedin.com/in/basem-said-468b7b274"
                 target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-500 transition transform hover:scale-125 duration-300"
               >
-                <i className="fa-brands fa-linkedin me-3"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </Link>
-              <Link to="https://github.com/BasemSaid1" target="_blank">
-                <i className="fa-brands fa-github me-3"></i>
+              <Link
+                to="https://github.com/BasemSaid1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-400 transition transform hover:scale-125 duration-300"
+              >
+                <i className="fa-brands fa-github"></i>
               </Link>
-
-              <Link to="https://wa.me/01095435168" target="_blank">
+              <Link
+                to="https://wa.me/01095435168"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-500 transition transform hover:scale-125 duration-300"
+              >
                 <i className="fa-brands fa-whatsapp"></i>
               </Link>
             </div>
@@ -128,35 +144,40 @@ export default function Home() {
         </section>
         <section>
           <div className="py-6">
-            <h1 className="text-white text-center text-4xl md:text-5xl py-7 pb-32">
+            <h1 className="text-white text-center text-4xl md:text-5xl py-7 pb-32 font-extrabold font-['Poppins'] tracking-tight animate-[pulse_2s_ease-in-out_infinite]">
               Check Out My Projects
             </h1>
-            <div className="flex flex-wrap  mb-10 md:w-[80%] w-[95%] mx-auto">
-              <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+            <div className="flex flex-wrap justify-center gap-8 md:w-[90%] w-[95%] mx-auto">
+              <div
+                className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                   <div>
                     <Link
                       to="https://fresh-cart-ewou0tuim-basem-saids-projects.vercel.app"
                       target="_blank"
                     >
                       <img
-                        className="w-full h-[250px] object-cover"
+                        className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
                         src={project13}
                         alt="FreshCart"
                       />
                     </Link>
                   </div>
-                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                  <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
                     FreshCart App
                   </h2>
-                  <div className="mt-4 flex space-x-4">
+                  <div className="mt-6 flex space-x-4">
                     <Link
                       to="https://fresh-cart-ewou0tuim-basem-saids-projects.vercel.app"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        DEMO
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">DEMO</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                     <Link
@@ -164,77 +185,89 @@ export default function Home() {
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        CODE
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">CODE</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+              <div
+                className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+                data-aos="fade-up"
+                data-aos-delay="1100"
+              >
+                <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                   <div>
                     <Link
-                      to="https://news-app-nine-pi.vercel.app/"
+                      to="https://quran-app2-peach.vercel.app/"
                       target="_blank"
                     >
                       <img
-                        className="w-full h-[250px] object-cover"
-                        src={project14}
-                        alt="GlobalNews"
+                        className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                        src={project20}
+                        alt="Quran App"
                       />
                     </Link>
                   </div>
-                  <h2 className="mt-3 text-white text-2xl font-semibold">
-                    GlobalNews
+                  <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                    Quran App
                   </h2>
-                  <div className="mt-4 flex space-x-4">
+                  <div className="mt-6 flex space-x-4">
                     <Link
-                      to="https://news-app-nine-pi.vercel.app/"
+                      to="https://quran-app2-peach.vercel.app/"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        DEMO
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">DEMO</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                     <Link
-                      to="https://github.com/BasemSaid1/News-App"
+                      to="https://github.com/BasemSaid1/Quran-App2"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        CODE
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">CODE</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+              <div
+                className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                   <div>
                     <Link
                       to="https://my-movies-nu-teal.vercel.app/"
                       target="_blank"
                     >
                       <img
-                        className="w-full h-[250px] object-cover"
+                        className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
                         src={project18}
                         alt="My Movies"
                       />
                     </Link>
                   </div>
-                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                  <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
                     My Movies
                   </h2>
-                  <div className="mt-4 flex space-x-4">
+                  <div className="mt-6 flex space-x-4">
                     <Link
                       to="https://my-movies-nu-teal.vercel.app/"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        DEMO
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">DEMO</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                     <Link
@@ -242,77 +275,89 @@ export default function Home() {
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        CODE
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">CODE</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+              <div
+                className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                   <div>
                     <Link
-                      to="https://dashboard-two-woad-66.vercel.app/"
+                      to="https://restaurant-ashen-five.vercel.app/"
                       target="_blank"
                     >
                       <img
-                        className="w-full h-[250px] object-cover"
-                        src={project15}
-                        alt="Dashboard"
+                        className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                        src={project19}
+                        alt="restaurant"
                       />
                     </Link>
                   </div>
-                  <h2 className="mt-3 text-white text-2xl font-semibold">
-                    Dashboard
+                  <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                    Restaurant
                   </h2>
-                  <div className="mt-4 flex space-x-4">
+                  <div className="mt-6 flex space-x-4">
                     <Link
-                      to="https://dashboard-two-woad-66.vercel.app/"
+                      to="https://restaurant-ashen-five.vercel.app/"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        DEMO
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">DEMO</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                     <Link
-                      to="https://github.com/BasemSaid1/dashboard"
+                      to="https://github.com/BasemSaid1/restaurant"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        CODE
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">CODE</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+              <div
+                className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                   <div>
                     <Link
                       to="https://recipe-food-amber.vercel.app/"
                       target="_blank"
                     >
                       <img
-                        className="w-full h-[250px] object-cover"
+                        className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
                         src={project12}
                         alt="Recipe App"
                       />
                     </Link>
                   </div>
-                  <h2 className="mt-3 text-white text-2xl font-semibold">
+                  <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
                     Recipe
                   </h2>
-                  <div className="mt-4 flex space-x-4">
+                  <div className="mt-6 flex space-x-4">
                     <Link
                       to="https://recipe-food-amber.vercel.app/"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        DEMO
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">DEMO</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                     <Link
@@ -320,242 +365,266 @@ export default function Home() {
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        CODE
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">CODE</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center">
-                <div className="relative mr-3 mb-5 group border-2 border-gray-200 rounded-lg shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 p-4">
+              <div
+                className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+                data-aos="fade-up"
+                data-aos-delay="1700"
+              >
+                <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                   <div>
                     <Link
-                      to="https://basemsaid1.github.io/weather-app/"
+                      to="https://dashboard-two-woad-66.vercel.app/"
                       target="_blank"
                     >
                       <img
-                        className="w-full h-[250px] object-cover"
-                        src={project1}
-                        alt="Weather App"
+                        className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                        src={project15}
+                        alt="Dashboard"
                       />
                     </Link>
                   </div>
-                  <h2 className="mt-3 text-white text-2xl font-semibold">
-                    weather-app
+                  <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                    Dashboard
                   </h2>
-                  <div className="mt-4 flex space-x-4">
+                  <div className="mt-6 flex space-x-4">
                     <Link
-                      to="https://basemsaid1.github.io/weather-app/"
+                      to="https://dashboard-two-woad-66.vercel.app/"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        DEMO
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">DEMO</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                     <Link
-                      to="https://github.com/BasemSaid1/weather-app"
+                      to="https://github.com/BasemSaid1/dashboard"
                       target="_blank"
                       className="w-1/2"
                     >
-                      <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 w-full rounded-lg transition-all duration-300 transform hover:scale-105">
-                        CODE
+                      <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                        <span className="relative z-10">CODE</span>
+                        <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
                   </div>
                 </div>
               </div>
-
-              <div className="mt-7 mx-auto">
-                <Link to="projects">
-                  <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
-                    SEE MORE
-                  </button>
-                </Link>
-              </div>
+            </div>
+            <div className="mt-7 mx-auto text-center">
+              <Link to="projects">
+                <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
+                  SEE MORE
+                </button>
+              </Link>
             </div>
           </div>
         </section>
         <section>
-          <div className="py-6">
-            <h1 className="text-white text-center text-5xl py-7 pb-32">
+          <div className="py-6 px-4 md:px-0">
+            <h1 className="text-white text-center text-5xl md:text-6xl font-extrabold font-['Poppins'] py-7 pb-32 tracking-tight animate-[pulse_2s_ease-in-out_infinite]">
               Technical Skills
             </h1>
-            <div className="flex flex-wrap  mb-10 md:w-[80%] w-[95%] mx-auto">
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+            <div className="flex flex-wrap justify-center gap-6 mb-10 md:w-[80%] w-[95%] mx-auto">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imghtml}
-                      alt="pto"
+                      alt="HTML"
                     />
                   </div>
-                  <p className="mt-3 text-white">HTML</p>
+                  <p className="mt-3 text-white text-lg font-semibold">HTML</p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgcss}
-                      alt="pto"
+                      alt="CSS"
                     />
                   </div>
-                  <p className="mt-3 text-white">CSS</p>
+                  <p className="mt-3 text-white text-lg font-semibold">CSS</p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgjs}
-                      alt="pto"
+                      alt="JS"
                     />
                   </div>
-                  <p className="mt-3 text-white">JS</p>
+                  <p className="mt-3 text-white text-lg font-semibold">JS</p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgboot}
-                      alt="pto"
+                      alt="Bootstrap"
                     />
                   </div>
-                  <p className="mt-3 text-white">Bootstrap</p>
+                  <p className="mt-3 text-white text-lg font-semibold">
+                    Bootstrap
+                  </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgreact}
-                      alt="pto"
+                      alt="React.js"
                     />
                   </div>
-                  <p className="mt-3 text-white">React.js</p>
+                  <p className="mt-3 text-white text-lg font-semibold">
+                    React.js
+                  </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgtailwind}
-                      alt="pto"
+                      alt="Tailwind"
                     />
                   </div>
-                  <p className="mt-3 text-white">Tailwind</p>
+                  <p className="mt-3 text-white text-lg font-semibold">
+                    Tailwind
+                  </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgredux}
-                      alt="pto"
+                      alt="Redux"
                     />
                   </div>
-                  <p className="mt-3 text-white">Redux</p>
+                  <p className="mt-3 text-white text-lg font-semibold">Redux</p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgrouter}
-                      alt="pto"
+                      alt="React Router Dom"
                     />
                   </div>
-                  <p className="mt-3 text-white">React Router Dom</p>
+                  <p className="mt-3 text-white text-lg font-semibold">
+                    React Router Dom
+                  </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgtypescript}
-                      alt="pto"
+                      alt="TypeScript"
                     />
                   </div>
-                  <p className="mt-3 text-white">TypeScript</p>
+                  <p className="mt-3 text-white text-lg font-semibold">
+                    TypeScript
+                  </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgsass}
-                      alt="pto"
+                      alt="Sass"
                     />
                   </div>
-                  <p className="mt-3 text-white">Sass</p>
+                  <p className="mt-3 text-white text-lg font-semibold">Sass</p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgnext}
-                      alt="pto"
+                      alt="Next.js"
                     />
                   </div>
-                  <p className="mt-3 text-white">Next.Js</p>
+                  <p className="mt-3 text-white text-lg font-semibold">
+                    Next.js
+                  </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imgui}
-                      alt="pto"
+                      alt="Material UI"
                     />
                   </div>
-                  <p className="mt-3 text-white">Material Ui</p>
+                  <p className="mt-3 text-white text-lg font-semibold">
+                    Material UI
+                  </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imggit}
-                      alt="pto"
+                      alt="Git"
                     />
                   </div>
-                  <p className="mt-3 text-white">Git</p>
+                  <p className="mt-3 text-white text-lg font-semibold">Git</p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 text-center ">
-                <div className="border-blue-500 border mr-3 mb-3 py-2 px-2 rounded-lg transition-transform duration-500 ease-out transform  hover:scale-105">
+              <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/5 text-center group">
+                <div className="bg-gray-800 border-2 border-blue-600 rounded-xl p-4 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
                   <div className="mt-4">
                     <img
-                      className="animate-blink mx-auto w-[100px]"
+                      className="mx-auto w-[80px] h-[80px] object-contain animate-[blink_1.5s_ease-in-out_infinite] transition-transform duration-300 group-hover:scale-110"
                       src={imggithub}
-                      alt="photo"
+                      alt="GitHub"
                     />
                   </div>
-                  <p className="mt-3 text-white">Github</p>
+                  <p className="mt-3 text-white text-lg font-semibold">
+                    GitHub
+                  </p>
                 </div>
               </div>
             </div>
             <div className="text-center">
-              <Link to="about">
-                <button className="text-white font-bold bg-emerald-800 hover:bg-emerald-700 py-3 px-4 rounded-lg">
-                  ABOUT ME
+              <Link to="/about">
+                <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-base font-semibold text-white rounded-lg group bg-gradient-to-br from-emerald-600 to-blue-500 group-hover:from-emerald-600 group-hover:to-blue-500 focus:ring-4 focus:outline-none focus:ring-emerald-300 transition-all duration-300 transform hover:scale-105">
+                  <span className="relative px-6 py-3 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    About Me
+                  </span>
                 </button>
               </Link>
             </div>
