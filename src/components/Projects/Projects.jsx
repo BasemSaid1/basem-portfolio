@@ -19,6 +19,8 @@ import project16 from "../../assets/project16.png";
 import project17 from "../../assets/project17.png";
 import project18 from "../../assets/project18.png";
 import project19 from "../../assets/project19.png";
+import project21 from "../../assets/project21.png";
+
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -122,53 +124,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 3: GlobalNews */}
-            <div
-              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
-                <div>
-                  <Link
-                    to="https://news-app-nine-pi.vercel.app/"
-                    target="_blank"
-                  >
-                    <img
-                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project14}
-                      alt="GlobalNews"
-                    />
-                  </Link>
-                </div>
-                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  GlobalNews
-                </h2>
-                <div className="mt-6 flex space-x-4">
-                  <Link
-                    to="https://news-app-nine-pi.vercel.app/"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">DEMO</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                  <Link
-                    to="https://github.com/BasemSaid1/News-App"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">CODE</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* Project 4: My Movies */}
+            {/* Project 3: My Movies */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -214,53 +170,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 5: La-collection */}
-            <div
-              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
-                <div>
-                  <Link
-                    to="https://la-collection-e-commerce-ruby.vercel.app/"
-                    target="_blank"
-                  >
-                    <img
-                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project11}
-                      alt="La-collection"
-                    />
-                  </Link>
-                </div>
-                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  La-collection
-                </h2>
-                <div className="mt-6 flex space-x-4">
-                  <Link
-                    to="https://la-collection-e-commerce-ruby.vercel.app/"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">DEMO</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                  <Link
-                    to="https://github.com/BasemSaid1/La-collection-E-commerce"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">CODE</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* Project 6: Recipe */}
+            {/* Project 4: Recipe */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -306,191 +216,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 7: Weather App */}
-            <div
-              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
-              data-aos="fade-up"
-              data-aos-delay="700"
-            >
-              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
-                <div>
-                  <Link
-                    to="https://basemsaid1.github.io/weather-app/"
-                    target="_blank"
-                  >
-                    <img
-                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project1}
-                      alt="Weather App"
-                    />
-                  </Link>
-                </div>
-                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  Weather App
-                </h2>
-                <div className="mt-6 flex space-x-4">
-                  <Link
-                    to="https://basemsaid1.github.io/weather-app/"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">DEMO</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                  <Link
-                    to="https://github.com/BasemSaid1/weather-app"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">CODE</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* Project 8: Login App */}
-            <div
-              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            >
-              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
-                <div>
-                  <Link
-                    to="https://basemsaid1.github.io/Login-JS-LocalStorage/"
-                    target="_blank"
-                  >
-                    <img
-                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project2}
-                      alt="Login App"
-                    />
-                  </Link>
-                </div>
-                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  Login App
-                </h2>
-                <div className="mt-6 flex space-x-4">
-                  <Link
-                    to="https://basemsaid1.github.io/Login-JS-LocalStorage/"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">DEMO</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                  <Link
-                    to="https://github.com/BasemSaid1/Login-JS-LocalStorage"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">CODE</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* Project 9: Todo List */}
-            <div
-              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
-              data-aos="fade-up"
-              data-aos-delay="900"
-            >
-              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
-                <div>
-                  <Link
-                    to="https://basemsaid1.github.io/Todo-list/"
-                    target="_blank"
-                  >
-                    <img
-                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project3}
-                      alt="Todo List"
-                    />
-                  </Link>
-                </div>
-                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  Todo List
-                </h2>
-                <div className="mt-6 flex space-x-4">
-                  <Link
-                    to="https://basemsaid1.github.io/Todo-list/"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">DEMO</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                  <Link
-                    to="https://github.com/BasemSaid1/Todo-list"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">CODE</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* Project 10: Calculator App */}
-            <div
-              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
-              data-aos="fade-up"
-              data-aos-delay="1000"
-            >
-              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
-                <div>
-                  <Link
-                    to="https://basemsaid1.github.io/Calculator-app/"
-                    target="_blank"
-                  >
-                    <img
-                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project4}
-                      alt="Calculator-app"
-                    />
-                  </Link>
-                </div>
-                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  Calculator App
-                </h2>
-                <div className="mt-6 flex space-x-4">
-                  <Link
-                    to="https://basemsaid1.github.io/Calculator-app/"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">DEMO</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                  <Link
-                    to="https://github.com/BasemSaid1/Calculator-app"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">CODE</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* Project 11: Quran App */}
+            {/* Project 5: Quran App */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -536,31 +262,31 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 12: Daniels-Template */}
+            {/* Project 6: GlobalNews */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
-              data-aos-delay="1200"
+              data-aos-delay="300"
             >
               <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                 <div>
                   <Link
-                    to="https://basemsaid1.github.io/Daniels-Template/"
+                    to="https://news-app-nine-pi.vercel.app/"
                     target="_blank"
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project5}
-                      alt="Daniels-Template"
+                      src={project14}
+                      alt="GlobalNews"
                     />
                   </Link>
                 </div>
                 <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  Daniels-Template
+                  GlobalNews
                 </h2>
                 <div className="mt-6 flex space-x-4">
                   <Link
-                    to="https://basemsaid1.github.io/Daniels-Template/"
+                    to="https://news-app-nine-pi.vercel.app/"
                     target="_blank"
                     className="w-1/2"
                   >
@@ -570,7 +296,283 @@ export default function Projects() {
                     </button>
                   </Link>
                   <Link
-                    to="https://github.com/BasemSaid1/Daniels-Template.git"
+                    to="https://github.com/BasemSaid1/News-App"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 7: La-collection */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://la-collection-e-commerce-ruby.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project11}
+                      alt="La-collection"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  La-collection
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://la-collection-e-commerce-ruby.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/La-collection-E-commerce"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 8: Dashboard */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1700"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://dashboard-two-woad-66.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project15}
+                      alt="Dashboard"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Dashboard
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://dashboard-two-woad-66.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/dashboard"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 9: Quiz App */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1800"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://quiz-app-eta-ten-63.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project16}
+                      alt="Quiz App"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Quiz App
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://quiz-app-eta-ten-63.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/Quiz-App"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 10: Weather App */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://basemsaid1.github.io/weather-app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project1}
+                      alt="Weather App"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Weather App
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://basemsaid1.github.io/weather-app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/weather-app"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 11: Login App */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://basemsaid1.github.io/Login-JS-LocalStorage/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project2}
+                      alt="Login App"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Login App
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://basemsaid1.github.io/Login-JS-LocalStorage/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/Login-JS-LocalStorage"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 12: Todo List */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://basemsaid1.github.io/Todo-list/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project3}
+                      alt="Todo List"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Todo List
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://basemsaid1.github.io/Todo-list/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/Todo-list"
                     target="_blank"
                     className="w-1/2"
                   >
@@ -628,7 +630,145 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 14: Random Quote Generator */}
+            {/* Project 14: Calculator App */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://basemsaid1.github.io/Calculator-app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project4}
+                      alt="Calculator-app"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Calculator App
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://basemsaid1.github.io/Calculator-app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/Calculator-app"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* project 15: Currency Converter */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1900"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://basemsaid1.github.io/Currency-Converter/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project21}
+                      alt="Currency Converter"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Currency Converter
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://basemsaid1.github.io/Currency-Converter/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/Currency-Converter"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 16: Daniels-Template */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1200"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://basemsaid1.github.io/Daniels-Template/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src={project5}
+                      alt="Daniels-Template"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Daniels-Template
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://basemsaid1.github.io/Daniels-Template/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link
+                    to="https://github.com/BasemSaid1/Daniels-Template.git"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 17: Random Quote Generator */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -674,7 +814,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 15: Slider JS */}
+            {/* Project 18: Slider JS */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -720,7 +860,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 16: First Framework */}
+            {/* Project 19: First Framework */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -766,99 +906,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 17: Dashboard */}
-            <div
-              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
-              data-aos="fade-up"
-              data-aos-delay="1700"
-            >
-              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
-                <div>
-                  <Link
-                    to="https://dashboard-two-woad-66.vercel.app/"
-                    target="_blank"
-                  >
-                    <img
-                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project15}
-                      alt="Dashboard"
-                    />
-                  </Link>
-                </div>
-                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  Dashboard
-                </h2>
-                <div className="mt-6 flex space-x-4">
-                  <Link
-                    to="https://dashboard-two-woad-66.vercel.app/"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">DEMO</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                  <Link
-                    to="https://github.com/BasemSaid1/dashboard"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">CODE</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* Project 18: Quiz App */}
-            <div
-              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
-              data-aos="fade-up"
-              data-aos-delay="1800"
-            >
-              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
-                <div>
-                  <Link
-                    to="https://quiz-app-eta-ten-63.vercel.app/"
-                    target="_blank"
-                  >
-                    <img
-                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project16}
-                      alt="Quiz App"
-                    />
-                  </Link>
-                </div>
-                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                  Quiz App
-                </h2>
-                <div className="mt-6 flex space-x-4">
-                  <Link
-                    to="https://quiz-app-eta-ten-63.vercel.app/"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">DEMO</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                  <Link
-                    to="https://github.com/BasemSaid1/Quiz-App"
-                    target="_blank"
-                    className="w-1/2"
-                  >
-                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
-                      <span className="relative z-10">CODE</span>
-                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* Project 19: Rock Paper Scissors */}
+            {/* Project 20: Rock Paper Scissors */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
