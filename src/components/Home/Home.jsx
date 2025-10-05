@@ -14,12 +14,6 @@ import imgtypescript from "../../assets/typescript-icon-svgrepo-com.svg";
 import imgsass from "../../assets/sass-svgrepo-com.svg";
 import imgnext from "../../assets/next-dot-js-svgrepo-com.svg";
 import imgui from "../../assets/material-ui-svgrepo-com.svg";
-import project15 from "../../assets/project15.png";
-import project12 from "../../assets/project12.png";
-import project13 from "../../assets/project13.png";
-import project20 from "../../assets/project20.png";
-import project18 from "../../assets/project18.png";
-import project19 from "../../assets/project19.png";
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -161,7 +155,7 @@ export default function Home() {
                     >
                       <img
                         className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                        src={project13}
+                        src="/images/project1.png"
                         alt="FreshCart"
                       />
                     </Link>
@@ -206,7 +200,7 @@ export default function Home() {
                     >
                       <img
                         className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                        src={project20}
+                        src="/images/project5.png"
                         alt="Quran App"
                       />
                     </Link>
@@ -251,7 +245,7 @@ export default function Home() {
                     >
                       <img
                         className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                        src={project18}
+                        src="/images/project3.png"
                         alt="My Movies"
                       />
                     </Link>
@@ -286,27 +280,24 @@ export default function Home() {
               <div
                 className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="1100"
               >
                 <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                   <div>
-                    <Link
-                      to="https://restaurant-ashen-five.vercel.app/"
-                      target="_blank"
-                    >
+                    <Link to="https://adsamy2.vercel.app/" target="_blank">
                       <img
                         className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                        src={project19}
-                        alt="restaurant"
+                        src="/images/project6.png"
+                        alt="Educational-platform"
                       />
                     </Link>
                   </div>
                   <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                    Restaurant
+                    Educational-platform
                   </h2>
                   <div className="mt-6 flex space-x-4">
                     <Link
-                      to="https://restaurant-ashen-five.vercel.app/"
+                      to="https://adsamy2.vercel.app/"
                       target="_blank"
                       className="w-1/2"
                     >
@@ -315,11 +306,7 @@ export default function Home() {
                         <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
-                    <Link
-                      to="https://github.com/BasemSaid1/restaurant"
-                      target="_blank"
-                      className="w-1/2"
-                    >
+                    <Link to="#" className="w-1/2">
                       <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
                         <span className="relative z-10">CODE</span>
                         <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
@@ -331,27 +318,27 @@ export default function Home() {
               <div
                 className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
                 data-aos="fade-up"
-                data-aos-delay="600"
+                data-aos-delay="1100"
               >
                 <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
                   <div>
                     <Link
-                      to="https://recipe-food-amber.vercel.app/"
+                      to="https://rashid-yachts-sooty.vercel.app/"
                       target="_blank"
                     >
                       <img
                         className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                        src={project12}
-                        alt="Recipe App"
+                        src="/images/project7.png"
+                        alt="Rashid Yachts"
                       />
                     </Link>
                   </div>
                   <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
-                    Recipe
+                    Rashid Yachts
                   </h2>
                   <div className="mt-6 flex space-x-4">
                     <Link
-                      to="https://recipe-food-amber.vercel.app/"
+                      to="https://rashid-yachts-sooty.vercel.app/"
                       target="_blank"
                       className="w-1/2"
                     >
@@ -360,11 +347,7 @@ export default function Home() {
                         <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
                       </button>
                     </Link>
-                    <Link
-                      to="https://github.com/BasemSaid1/Recipe-food"
-                      target="_blank"
-                      className="w-1/2"
-                    >
+                    <Link to="#" className="w-1/2">
                       <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
                         <span className="relative z-10">CODE</span>
                         <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
@@ -386,7 +369,7 @@ export default function Home() {
                     >
                       <img
                         className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                        src={project15}
+                        src="/images/project13.png"
                         alt="Dashboard"
                       />
                     </Link>

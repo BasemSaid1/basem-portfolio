@@ -1,25 +1,5 @@
 import React from "react";
 import style from "./projects.module.css";
-import project1 from "../../assets/project1.png";
-import project2 from "../../assets/project2.png";
-import project3 from "../../assets/project3.png";
-import project4 from "../../assets/project4.png";
-import project5 from "../../assets/project5.png";
-import project6 from "../../assets/project6.png";
-import project7 from "../../assets/project7.png";
-import project8 from "../../assets/project8.png";
-import project9 from "../../assets/project9.png";
-import project20 from "../../assets/project20.png";
-import project11 from "../../assets/project11.png";
-import project12 from "../../assets/project12.png";
-import project13 from "../../assets/project13.png";
-import project14 from "../../assets/project14.jpg";
-import project15 from "../../assets/project15.png";
-import project16 from "../../assets/project16.png";
-import project17 from "../../assets/project17.png";
-import project18 from "../../assets/project18.png";
-import project19 from "../../assets/project19.png";
-import project21 from "../../assets/project21.png";
 
 import { Link } from "react-router-dom";
 
@@ -46,7 +26,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project13}
+                      src="/images/project1.png"
                       alt="FreshCart"
                     />
                   </Link>
@@ -92,7 +72,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project19}
+                      src="/images/project2.png"
                       alt="restaurant"
                     />
                   </Link>
@@ -138,7 +118,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project18}
+                      src="/images/project3.png"
                       alt="My Movies"
                     />
                   </Link>
@@ -184,7 +164,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project12}
+                      src="/images/project4.png"
                       alt="Recipe App"
                     />
                   </Link>
@@ -230,7 +210,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project20}
+                      src="/images/project5.png"
                       alt="Quran App"
                     />
                   </Link>
@@ -262,7 +242,211 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 6: GlobalNews */}
+            {/* Project 6: Educational-platform */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link to="https://adsamy2.vercel.app/" target="_blank">
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src="/images/project6.png"
+                      alt="Educational-platform"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Educational-platform
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://adsamy2.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link to="#" className="w-1/2">
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 7: Rashid Yachts */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://rashid-yachts-sooty.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src="/images/project7.png"
+                      alt="Rashid Yachts"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  Rashid Yachts
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://rashid-yachts-sooty.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link to="#" className="w-1/2">
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 8: furniture-showroom */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://furniture-showroom-silk.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src="/images/project8.png"
+                      alt="furniture-showroom"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  furniture-showroom
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://furniture-showroom-silk.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link to="#" className="w-1/2">
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 9: beauty-clinic */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link
+                    to="https://beauty-clinic-gilt.vercel.app/"
+                    target="_blank"
+                  >
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src="/images/project9.png"
+                      alt="beauty-clinic"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  beauty-clinic
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://beauty-clinic-gilt.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link to="#" className="w-1/2">
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 10: cafe */}
+            <div
+              className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            >
+              <div className="relative bg-gray-800 border-2 border-gray-600 rounded-xl shadow-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.7)] p-6">
+                <div>
+                  <Link to="https://caffee-swart.vercel.app/" target="_blank">
+                    <img
+                      className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
+                      src="/images/project10.png"
+                      alt="cafe"
+                    />
+                  </Link>
+                </div>
+                <h2 className="mt-4 text-white text-2xl font-bold tracking-wide">
+                  cafe
+                </h2>
+                <div className="mt-6 flex space-x-4">
+                  <Link
+                    to="https://caffee-swart.vercel.app/"
+                    target="_blank"
+                    className="w-1/2"
+                  >
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">DEMO</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                  <Link to="#" className="w-1/2">
+                    <button className="relative bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 w-full rounded-lg transition-all duration-300 transform hover:scale-110 overflow-hidden group/button">
+                      <span className="relative z-10">CODE</span>
+                      <span className="absolute inset-0 bg-emerald-500 opacity-0 group-hover/button:opacity-30 transition-opacity duration-300"></span>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Project 11: GlobalNews */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -276,7 +460,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project14}
+                      src="/images/project11.jpg"
                       alt="GlobalNews"
                     />
                   </Link>
@@ -308,7 +492,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 7: La-collection */}
+            {/* Project 12: La-collection */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -322,7 +506,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project11}
+                      src="/images/project12.png"
                       alt="La-collection"
                     />
                   </Link>
@@ -354,7 +538,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 8: Dashboard */}
+            {/* Project 13: Dashboard */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -368,7 +552,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project15}
+                      src="/images/project13.png"
                       alt="Dashboard"
                     />
                   </Link>
@@ -400,7 +584,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 9: Quiz App */}
+            {/* Project 14: Quiz App */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -414,7 +598,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project16}
+                      src="/images/project14.png"
                       alt="Quiz App"
                     />
                   </Link>
@@ -446,7 +630,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 10: Weather App */}
+            {/* Project 15: Weather App */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -460,7 +644,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project1}
+                      src="/images/project15.png"
                       alt="Weather App"
                     />
                   </Link>
@@ -492,7 +676,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 11: Login App */}
+            {/* Project 16: Login App */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -506,7 +690,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project2}
+                      src="/images/project16.png"
                       alt="Login App"
                     />
                   </Link>
@@ -538,7 +722,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 12: Todo List */}
+            {/* Project 17: Todo List */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -552,7 +736,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project3}
+                      src="/images/project17.png"
                       alt="Todo List"
                     />
                   </Link>
@@ -584,7 +768,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 13: BookMark */}
+            {/* Project 18: BookMark */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -598,7 +782,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project6}
+                      src="/images/project18.png"
                       alt="BookMark"
                     />
                   </Link>
@@ -630,7 +814,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 14: Calculator App */}
+            {/* Project 19: Calculator App */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -644,7 +828,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project4}
+                      src="/images/project19.png"
                       alt="Calculator-app"
                     />
                   </Link>
@@ -676,7 +860,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* project 15: Currency Converter */}
+            {/* project 20: Currency Converter */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -690,7 +874,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project21}
+                      src="/images/project20.png"
                       alt="Currency Converter"
                     />
                   </Link>
@@ -722,7 +906,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 16: Daniels-Template */}
+            {/* Project 21: Daniels-Template */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -736,7 +920,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project5}
+                      src="/images/project21.png"
                       alt="Daniels-Template"
                     />
                   </Link>
@@ -768,7 +952,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 17: Random Quote Generator */}
+            {/* Project 22: Random Quote Generator */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -782,7 +966,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project7}
+                      src="/images/project22.png"
                       alt="Random-Quote-Generator"
                     />
                   </Link>
@@ -814,7 +998,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 18: Slider JS */}
+            {/* Project 23: Slider JS */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -828,7 +1012,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project8}
+                      src="/images/project23.png"
                       alt="slider-js"
                     />
                   </Link>
@@ -860,7 +1044,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 19: First Framework */}
+            {/* Project 24: First Framework */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -874,7 +1058,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project9}
+                      src="/images/project24.png"
                       alt="First-framework"
                     />
                   </Link>
@@ -906,7 +1090,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            {/* Project 20: Rock Paper Scissors */}
+            {/* Project 25: Rock Paper Scissors */}
             <div
               className="w-full md:w-1/3 lg:w-1/4 text-center group relative"
               data-aos="fade-up"
@@ -920,7 +1104,7 @@ export default function Projects() {
                   >
                     <img
                       className="w-full h-[200px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
-                      src={project17}
+                      src="/images/project25.png"
                       alt="Rock Paper Scissors"
                     />
                   </Link>
